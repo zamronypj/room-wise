@@ -1,5 +1,5 @@
 import { AiOutlineInstagram } from "react-icons/ai";
-import { FaFacebookF, FaGithub, FaTwitter } from "react-icons/fa";
+import { FaFacebookF, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
 	//   const foundedYear = 2023;
