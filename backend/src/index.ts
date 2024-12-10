@@ -19,7 +19,6 @@ cloudinary.config({
 });
 
 mongoose.connect(process.env.MONGO_CONNECTION_STRING as string);
-
 const app = express();
 app.use(cookieParser());
 app.use(express.json()); // converts API request body to JSON
@@ -45,7 +44,9 @@ app.get("*", (req: Request, res: Response) => {
 	res.sendFile(path.join(__dirname, "../../frontend/dist/index.html"));
 });
 
+const appPort = process.env.APP_PORT || 8000;
+
 // =============== SERVER LISTENING ===============
-app.listen(8000, () => {
-	console.log("server running on 8000");
+app.listen(appPort, () => {
+	console.log("server running on " + appPort);
 });
