@@ -1,4 +1,4 @@
-# Room Wise 
+# Room Wise
 
 > [!NOTE]
 > A full-stack hotel booking web app utilizing Express.js with TypeScript to architect a RESTful API server,
@@ -49,7 +49,7 @@ cd room-wise
 1. **Environment Files**: Navigate to the `backend` folder and create two files: `.env` and `.env.e2e`. Add the following contents to both files:
 
     ```plaintext
-    MONGODB_CONNECTION_STRING=
+    MONGO_CONNECTION_STRING=
 
     JWT_SECRET_KEY=
     FRONTEND_URL=
@@ -63,7 +63,7 @@ cd room-wise
     STRIPE_API_KEY=
     ```
 
-2. **MongoDB Setup**: 
+2. **MongoDB Setup**:
     - Sign up for an account at [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
     - Create a new cluster and follow the instructions to set up a new database.
     - Once set up, obtain your MongoDB connection string and add it to the `MONGODB_CONNECTION_STRING` variable in your `.env` files.
@@ -78,7 +78,7 @@ cd room-wise
     - Sign up for a Stripe account at [Stripe](https://stripe.com/).
     - Find your API keys in the Stripe dashboard.
     - Add your Stripe API key to the `STRIPE_API_KEY` variable in your `.env` files.
-  
+
 5. **JWT_SECRET_KEY**:
     - This just needs to be any long, random string (one ideal option is google "secret key generator").
 
@@ -88,7 +88,7 @@ cd room-wise
 
 **[Back to top](#table-of-contents)**
 
-  
+
 ---
 ## Front-end configuration
 
@@ -118,13 +118,13 @@ cd room-wise
     - Open a new terminal and navigate to the `frontend` directory
     - Install dependencies: `npm install`
     - Start the frontend application: `npm run dev`
-    - The application should now be running on `http://localhost:5173` but verify this in your command line terminal  
+    - The application should now be running on `http://localhost:5173` but verify this in your command line terminal
 
 **[Back to top](#table-of-contents)**
 
 ---
 
-## Running Docker 
+## Running Docker
 
 Build Docker images and run them as Docker containers
 
@@ -136,7 +136,7 @@ docker-compose -f docker-compose.yaml -p room-wise up -d
 
 ---
 
-##  Running End-to-End test suite 
+##  Running End-to-End test suite
 
 ### MongoDB Setup:
 
@@ -185,10 +185,10 @@ Follow these steps to execute end-to-end tests:
 **[Back to top](#table-of-contents)**
 
 ---
-## Technologies 
+## Technologies
 
 - **Front-end:**
-  
+
     - [React](https://react.dev) for building UI out of components
     - [TypeScript](https://www.typescriptlang.org) for ensuring a self-documenting & type-safe codebase
     - [React Context API](https://react.dev/reference/react/useContext) for handling app state management
@@ -199,7 +199,7 @@ Follow these steps to execute end-to-end tests:
     - [TailwindCSS](https://tailwindcss.com) for responsive web design
 
 - **Back-end:**
-  
+
     - [Express.js](https://expressjs.com/) & [Node.js](https://nodejs.org/en) for developing RESTful API endpoints, handling HTTP methods (CRUD operations) with layered validations
     - [MongoDB](https://www.mongodb.com/) for Cloud Database (data storage)
     - [Cloudinary](https://cloudinary.com/) for uploading & storing hotel images
@@ -217,13 +217,13 @@ Follow these steps to execute end-to-end tests:
 
 ---
 
-## Features (What problems can this application solve?) 
+## Features (What problems can this application solve?)
 
 - `Fully-Functional Web App`: Developed using MERN Stack with TypeScript, facilitating seamless hotel room booking
 
 
 - `CRUD Operations`: Users can add, update, delete, and book rooms with ease
-  
+
 - `RESTful API`: Adhering to RESTful principles for designing API endpoints, ensuring interoperability, scalability, and ease of integration with external systems
 
 - `Filtering and Sorting Options`: Users can filter and sort hotels based on price and hotel types, enhancing their browsing experience and enabling them to find the perfect accommodation easily
@@ -260,7 +260,7 @@ Follow these steps to execute end-to-end tests:
 ## Optimizations:
 
 Future improvements will aim for optimization in:
-      
+
 - [ ] managing all hotel rooms through an ADMIN panel, which performs CRUD operations on hotel rooms for USERS' booking conveniences
 
 - [ ] controlling & limiting the rate of incoming requests from a set of IP addresses in order to protect the Server from potential brute-force attacks
@@ -327,4 +327,3 @@ If you have any questions or need assistance, feel free to open an issue and sta
 Happy Coding! 🚀
 
 **[Back to top](#table-of-contents)**
-
