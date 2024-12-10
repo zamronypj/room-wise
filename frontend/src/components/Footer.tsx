@@ -23,7 +23,7 @@ const Footer = () => {
 					<div className="flex w-full justify-end">
 						<div className="relative w-full py-4 md:w-[300px]">
 							<p className="text-center text-xl font-bold md:text-right">
-								Wanna become our partner?
+								Become our partner
 							</p>
 							<div className="py-4">
 								<div>
