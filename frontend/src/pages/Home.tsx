@@ -1,7 +1,7 @@
 import { QueryClient, useQuery } from "react-query";
 import * as apiClient from "../api-client";
 import LatestDestinationCard from "../components/LatestDestinationCard";
-import FAQ from "../components/FAQ";
+// import FAQ from "../components/FAQ";
 
 type Props = {
 	queryClient: QueryClient;
@@ -40,7 +40,7 @@ const Home = ({ queryClient }: Props) => {
 					</div>
 				)}
 			</div>
-			<FAQ />
+			{/* <FAQ /> */}
 		</div>
 	);
 };

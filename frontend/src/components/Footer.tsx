@@ -18,13 +18,6 @@ const Footer = () => {
 							</li>
 						</ul>
 					</div>
-					<div className="md:ml-4">
-						<h2 className="mb-2 text-xl font-bold">For Developers</h2>
-						<ul>
-							<li className="cursor-not-allowed py-2 text-sm">Career</li>
-							<li className="cursor-not-allowed py-2 text-sm">Documentation</li>
-						</ul>
-					</div>
 				</div>
 				<div className="text-right">
 					<div className="flex w-full justify-end">
@@ -46,22 +39,33 @@ const Footer = () => {
 							</div>
 							<div className="flex justify-between px-4 pb-2 pt-4 text-accent ">
 								<a
-									href="https://github.com/jayden-n/room-wise"
+									href="https://instagram.com/@gogili-hotel"
 									target="_blank"
 									rel="noreferrer"
 								>
-									<FaGithub className="cursor-pointer" />
+  								    <AiOutlineInstagram className="cursor-pointer" />
 								</a>
-								<AiOutlineInstagram className="cursor-not-allowed" />
-								<FaFacebookF className="cursor-not-allowed" />
-								<FaTwitter className="cursor-not-allowed" />
+								<a
+									href="https://facebook.com/@gogili-hotel"
+									target="_blank"
+									rel="noreferrer"
+								>
+   								    <FaFacebookF className="cursor-pointer" />
+								</a>
+								<a
+									href="https://twitter.com/@gogili-hotel"
+									target="_blank"
+									rel="noreferrer"
+								>
+ 								    <FaTwitter className="cursor-pointer" />
+								</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<p className="pb-6 pt-4 text-center text-sm">
-				&copy; {currentYear} <span className="font-bold"> Room Wise</span>, Inc.
+				&copy; {currentYear} <span className="font-bold"> Go Gili</span>.
 				All rights reserved.
 			</p>
 		</div>
